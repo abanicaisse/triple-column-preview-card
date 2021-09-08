@@ -1,0 +1,115 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --darker-cyan: hsl(179, 100%, 13%);
+    --trans-whtie-paragraph: hsla(0, 0%, 100%, 0.75);
+    --light-gray-bg-h-b: hsl(0, 0%, 95%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%; 
+    height: 100%;
+    background-color: var(--light-gray-bg-h-b);
+    display: grid;
+    place-items: center;
+}
+
+#card {
+    width: min(20rem, 85%);
+}
+
+#card img {
+    padding-top: 1rem;
+}
+
+#card h1 {
+    text-transform: uppercase;
+    color: var(--light-gray-bg-h-b);
+}
+
+#card p {
+    color: var(--trans-whtie-paragraph);
+}
+
+#card a {
+    width: 8rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--light-gray-bg-h-b);
+    background-color: var(--light-gray-bg-h-b);
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+#card .card__sedans {
+    background-color: var(--bright-orange);
+    display: grid;
+    align-items: center;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+#card .card__sedans > * {
+    margin-bottom: 1rem;
+}
+
+#card .card__sedans > p {
+    margin-bottom: 2rem;
+}
+
+#card .card__sedans > a {
+    color: var(--bright-orange);
+}
+
+#card .card__suvs {
+    background-color: var(--dark-cyan);
+    display: grid;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#card .card__suvs > * {
+    margin-bottom: 1rem;
+}
+
+#card .card__suvs > p {
+    margin-bottom: 2rem;
+}
+
+#card .card__suvs > a {
+    color: var(--dark-cyan);
+}
+
+#card .card__luxury {
+    background-color: var(--darker-cyan);
+    display: grid;
+    align-items: center;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+#card .card__luxury > * {
+    margin-bottom: 1rem;
+}
+
+#card .card__luxury > p {
+    margin-bottom: 2rem;
+}
+
+#card .card__luxury > a {
+    color: var(--darker-cyan);
+}
+
+@media screen and (min-widht)
