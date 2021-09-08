@@ -25,7 +25,7 @@ body {
 }
 
 #card {
-    width: min(20rem, 85%);
+    width: min(20rem, 90%);
 }
 
 #card img {
@@ -112,4 +112,28 @@ body {
     color: var(--darker-cyan);
 }
 
-@media screen and (min-widht)
+
+@media screen and (min-width: 1000px) {
+    #card {
+        width: 56.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card .card__sedans{
+        border-top-right-radius: 0rem;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+    }
+    
+    #card .card__luxury {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    #card > div > p {
+        padding-bottom: 2rem;
+    }
+}
