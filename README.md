@@ -11,12 +11,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,23 +23,16 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
+1. Desktop Design
 
-![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+1. Mobile Design
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
 
 ### Built with
 
@@ -53,59 +41,88 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+- CSS flexbox
+- CSS grid
+- CSS absolute and relative positioning
+- CSS before and after Pseudo elements
+- HTML5 Markup
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
-
+Some HTML code from the project
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main id="card">
+
+  <div class="card__sedans">
+    <img src="./images/icon-sedans.svg" alt="sedans icon">
+    <h1>Sedans</h1>
+    <p>  
+      Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.
+    </p>
+    <a href="#">Learn More</a>
+  </div>
+
+  <div class="card__suvs">
+    <img src="./images/icon-suvs.svg" alt="suvs icon">
+    <h1>Suvs</h1>
+    <p>
+      Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.
+    </p>
+    <a href="#">Learn More</a>
+  </div>
+
+  <div class="card__luxury">
+    <img src="./images/icon-luxury.svg" alt="luxury icon">
+    <h1>Luxury</h1>
+    <p>
+      Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.
+    </p>
+    <a href="#">Learn More</a>
+  </div>
+
+</main>
 ```
+Some CSS code from the project
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+#card p {
+    color: var(--trans-whtie-paragraph);
+}
+
+#card a {
+    width: 8rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--light-gray-bg-h-b);
+    background-color: var(--light-gray-bg-h-b);
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+#card .card__sedans {
+    background-color: var(--bright-orange);
+    display: grid;
+    align-items: center;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    padding: 1rem 2rem;
+}
+
+#card .card__sedans > * {
+    margin-bottom: 1rem;
+}
+
+#card .card__sedans > p {
+    margin-bottom: 2rem;
+}
+
+#card .card__sedans > a {
+    color: var(--bright-orange);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Twitter - [@abanicaisse](https://www.twitter.com/abanicaisse)
+- Frontend Mentor - [@abanicaisse](https://www.frontendmentor.io/profile/abanicaisse)
+- CodePen - [My codepen](https://www.codepen.io/Nicaisse)
