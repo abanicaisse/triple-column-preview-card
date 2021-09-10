@@ -25,8 +25,10 @@ Users should be able to:
 ### Screenshot
 
 1. Desktop Design
+![FEM-three-column-card(1)](https://user-images.githubusercontent.com/84383548/132902781-c629d0aa-c5f7-418d-a7cd-dae12f2e6b69.png)
 
-1. Mobile Design
+1. Mobile Design <br>
+![FEM-three-colunm-card(2)](https://user-images.githubusercontent.com/84383548/132902794-f273302b-6e3e-4121-8b6d-9174b11af611.png)
 
 ### Links
 
